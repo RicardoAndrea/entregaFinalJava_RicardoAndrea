@@ -1,6 +1,5 @@
 import { comprarProducto } from "./carrito.js"
-fetch(".data.json")
-   .then((response) => response.json())
+
 const userlogin = document.getElementById("userlogin")
 const divProductos = document.getElementById("productos")
 const filterPrecio = document.getElementById("filter__precio")
@@ -64,7 +63,7 @@ export const generarCardsProductos = (productos) => {
 let boton = document.getElementById("whatsapp");
 boton.addEventListener("click", () => {
     Toastify({
-      text: "Contactenos por WhatsApp!",
+      text: "Presiona Aquí para Contactenos por WhatsApp!",
       duration: 6000,
       destination: "https://wa.me/542235476379",
     }).showToast();
